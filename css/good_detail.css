@@ -1,0 +1,133 @@
+img{display: inline-block;vertical-align: top;}
+body{background: #f5f5f5;}
+div,span,li{font-size: .75rem;}
+.logo{width: 3.15625rem;height: 2.15625rem;padding-top: .75rem;padding-left: 0.625rem;}
+.head .location{position: absolute;font-size: .75rem;left: 0.9375rem;}
+.head .location img{width: 0.59375rem;height: 0.40625rem;margin-top: 1rem;}
+.head .search{width: 0.90625rem;height: 0.90625rem;}
+.head .search img{width: 0.90625rem;height: 0.90625rem;margin-top: 0.78125rem;position: absolute;right: 0.90625rem;}
+.return_img{width: 0.5625rem;height: 1rem;position: absolute;top: 0.75rem;left: 1.09375rem;}
+.cart_turn{position: absolute;width: 1.0625rem;height: 1.0625rem;right: 3.5625rem;top: 0.75rem;}
+.shoucang_turn{width: 1.25rem;height: 1.1875rem;right: 0.9375rem;top: 0.625rem;position: absolute;}
+
+
+
+
+
+
+/*轮播图*/
+/*public scroll（手机触屏滚动）*/
+ article{position:relative;width:100%;max-width:640px;min-width:320px;margin:auto;}
+.scroll_box{overflow:hidden;visibility:hidden;position:relative;height: 20rem;overflow: hidden;}
+.scroll_wrap{overflow:hidden; position:relative;}
+.scroll_wrap li{position:relative;display:block;width:100%;float:left;height:20rem;}
+.scroll_wrap li a{display:block;margin:0 auto;position:relative;}
+div.shop_name{color:#000;font-size:20px;position:absolute;top:2%;left:2%;}
+/*修改3*/
+.scroll_wrap li a img{height: 20rem;}
+.scroll_position{position:absolute;left:35%;top:86%;z-index:400px;text-align:center;width:30%;}
+.scroll_position li{display:inline-block;width:6px;height:6px;border-radius:5px;background:#fff;}
+.scroll_position li a{font-size:0;}
+.scroll_position li.on{background-color:#ff7200;}
+.scroll_position_bg{background:#000;position:absolute;bottom:12px;
+	left:35%;padding:0 15px;z-index:380px;height:26px;border-radius:26px;}
+	/*轮播结束*/
+	
+	.bottom_bg{padding-bottom: 2.4375rem;}
+/*分类开始*/
+.fenlei{padding: 0.375rem 0; height: 4.21875rem;width: 100%; overflow-x: scroll;overflow-y: hidden;}
+
+.fenlei_img_wrap{display: inline-block;width: 6.09375rem;
+height: 4.21875rem;border-radius: 9px;position: relative;
+margin-right: 0.34375rem;
+}
+.background_fenlei{display: inline-block;position: absolute;width: 100%;
+height: 4.21875rem;line-height: 4.21875rem ;text-align: center;font-family: "黑体";border-radius: 9px;
+     background: rgba(0,0,0,0.53);color: #fff;font-size: 0.75rem;letter-spacing: 0.5rem;text-indent: 0.5rem;}
+.fenlei_img{display: inline-block;width: 100%;height: 4.21875rem;    position: absolute;
+    top: 0px;
+    left: 0px;}
+.scroll_fenlei_box{width: 600px;font-size: 0px;}
+.guige_span{height: 1.5rem;line-height: 1.5rem;}
+.guige_ul{font-size: 0px;float: left;}
+.guige_li{border: 0.0625rem solid #939393;font-size: 0.75rem;float: left; 
+margin-right: 0.8125rem;padding: 0.1875rem 1.03125rem;margin-bottom: 0.3125rem}
+.guige_li_active{border: 1px solid #FF9b40;color: #ff7200;}
+/*商品详情*/
+.title_wrap{background: #fff;border-bottom: 0.0625rem solid #d9d9d9;}
+.shop_title{font-size: 0.9375rem;font-weight: 800;padding: 0 1.0625rem;padding-top: 0.75rem;}
+.shop_second_title{color: #959595;font-size: 0.75rem;padding: 0 1.0625rem;
+padding-top: 0.09375rem;margin-bottom: 0.75rem;}
+.price_now{background: #fff;font-weight: 800;font-size: 0.9375rem;color: #FF7200;padding-top: 0.65625rem;padding-left: 1.25rem;}
+.bigger{font-size: 1.25rem;}
+.past_price{font-size: .75rem;font-weight: normal;color: #888888;padding-left: .75rem;}
+.xiaoliang{color: #5a5a5a;font-size: 0.75rem;float: right;padding-right: 1.0625rem;position: relative;top: 0.625rem;}
+.guige{padding-top: 1.15625rem;background: #fff;}
+.guige_span{width: 3.25rem;display: inline-block;text-align: center;font-size: 0.75rem;float: left;}
+.add_number{    background: #fff;
+    width: 1.53125rem;
+    height: 1.53125rem;
+    border: 1px solid #999999;
+    display: inline-block;
+    font-size: 24px;
+    color: #FF7200;
+    cursor: pointer;
+    line-height: 1.53125rem;
+    text-align: center;vertical-align: top;float: left;}
+    .number_item{font-size: 14px;
+    border: 1px solid #999999;
+    -webkit-appearance: none;
+    height: 1.65625rem;
+    position: relative;
+    top: -4px;
+    border-left: none;
+    border-right: none;
+    width: 2.375rem;
+    text-align: center;
+    box-shadow: 0px 0px #fff;vertical-align: top;float: left;margin-top: 0.25rem;}
+    .item_number{padding-top: 0.625rem;padding-bottom: 1.0625rem;background: #fff;line-height: 1.75rem;}
+    .item_number_number{width: 3.25rem;
+    display: inline-block;
+    text-align: center;
+    font-size: 0.75rem;
+    float: left;
+        line-height: 1.5rem;
+    }
+    .pingjia{border-top: 1px solid #d9d9d9;border-bottom: 1px solid #d9d9d9;line-height: 2.03125rem;background: #fff;color: #5a5a5a;padding:0 0.84375rem;margin-bottom: 0.625rem;}
+    
+    .pingjia b{color: #FF7200;padding: 0 .0625rem;}
+    .see{float: right;}
+    .see img{width: 0.40625rem;height: 0.71875rem;margin-top: 0.5625rem;padding-left: 0.5rem;}
+    .img_arti_detail{height: 1.90625rem;background: #fff;color: #FF7200;border-top: 1px solid #d9d9d9;border-bottom: 1px solid #D9D9D9;text-align: center;line-height: 1.90625rem;font-size: 0.75rem;font-weight: 800;}
+	.img_detail img{max-width: 100%;margin-top: .03125rem;}
+	.shop_choose{     border-top: 1px solid #FF7200; box-shadow: 2px 13px 6px 11px #000;
+    height: 2.5rem;
+    position: fixed;
+    bottom: 0;
+    left: 0px;
+    background: #fff;
+    width: 20rem;}
+    .shop_choose a{display: block;}
+    .sj{width: 6.625rem;float: left;text-align: center;line-height: 2.5rem;color: #c21e1a;}
+    .sj img{width: 1.03125rem;height: 0.9375rem;padding-right: 0.375rem;padding-top: 0.6875rem;}
+	.add_cart{float: left;width:6.6875rem;background: #e62b21;text-align: center;line-height: 2.5rem;font-size: 0.75rem;    color: #fff;font-size: 0.875rem;}
+	.add_img{    width: 1.0625rem;
+    height: 1rem;
+    margin-right: 0.1875rem;
+    margin-top: 0.75rem;}
+	.buy_now{    float: left;
+    width: 6.6875rem;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #fff;
+    background: #ff7200;
+    line-height: 2.5rem;}
+	.buy_now img{width: 100%;}
+	.buy_now a{display: block;}
+	
+.shangjia{background: #fff;margin-bottom: 0.5625rem;border-top: 1px solid #ececec;border-bottom: 1px solid #ececec;}
+.sh_img{width: 2.9375rem;height: 2.9375rem;padding: 0.65625rem 1.03125rem 1.25rem 0.78125rem;float: left;}
+.shangjia_wrap{border-right: 1px solid #dfdfe0;font-size: .75rem;float: left;width: 11.75rem;height: 4.875rem;}
+.shangjia_wrap .name{padding: 0.6875rem 0 0.25rem 0;color: #5a5a5a;}
+.shangjia_wrap .content{color: #888888;}
+.shangjia .phone{width: 1.125rem;height: 1.125rem;padding: 1.875rem 1rem 1.875rem 1.28125rem;}

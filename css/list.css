@@ -1,0 +1,67 @@
+img{display: inline-block;vertical-align: top;}
+body{background: #f5f5f5;}
+div,span,li{font-size: .75rem;}
+.logo{width: 3.15625rem;height: 2.15625rem;padding-top: .75rem;padding-left: 0.625rem;}
+.head .location{position: absolute;font-size: .75rem;left: 0.9375rem;}
+.head .location img{width: 0.59375rem;height: 0.40625rem;margin-top: 1rem;}
+.head .search{width: 0.90625rem;height: 0.90625rem;}
+.head .search img{width: 0.90625rem;height: 0.90625rem;margin-top: 0.78125rem;position: absolute;right: 0.90625rem;}
+.return_img{width: 0.5625rem;height: 1rem;position: absolute;top: 0.75rem;left: 1.09375rem;}
+.wrap{padding-top: 5.03125rem;}
+
+/*排序*/
+.paixu{width: 20rem;line-height: 2.5rem;border-bottom: 1px solid #e0e0e0;position: fixed;top: 2.53125rem;}
+.paixu a{display: block;}
+.all_fenlei{position: relative;float: left;background: #fff;color: #bbbbbb;text-align: center;width: 6.6875rem;box-sizing:border-box;border-right: 1px solid #efefef;    }
+.all_fenlei .all_fenlei_ul{overflow:auto;min-height:18.125rem;display:none;position: absolute;left: 0;background: #fff;color: #000;width: 10rem;}
+.all_fenlei .all_fenlei_ul li{border-bottom: 1px solid #f0f0f0;line-height: 2.5625rem;}
+.all_fenlei .hover_list{display:none;min-height:18.125rem;position: absolute;top:2.5rem;left: 10rem;background: #f4f4f4;color: #000;width: 10rem;}
+.all_fenlei .hover_list li{line-height: 2.5625rem;}
+.all_fenlei .hover_list li a{display: block;}
+.all_fenlei .hover_list ul{display: none;overflow:auto;min-height:18.125rem;}
+.choose_city{      border-right: 1px solid #efefef;box-sizing: border-box;  position: relative;float: left;background: #fff;color: #bbbbbb;text-align: center;width:6.65625rem;}
+.choose_city .all_fenlei_ul{overflow:auto;min-height:18.125rem;display:none;position: absolute;left: -6.6875rem;background: #fff;color: #000;width: 10rem;}
+.choose_city .all_fenlei_ul li{border-bottom: 1px solid #f0f0f0;line-height: 2.5625rem;}
+.choose_city .hover_list{display:none;min-height:18.125rem;position: absolute;top:2.5rem;left: 3.3125rem;background: #f4f4f4;color: #000;width: 10rem;}
+.choose_city .hover_list li{line-height: 2.5625rem;}
+.choose_city .hover_list li a{display: block;}
+.choose_city .hover_list{display: none;}
+.choose_city .hover_list ul{display: none;overflow:auto;min-height:18.125rem;}
+.choose_fenlei{    position: relative;float: left;background: #fff;color: #bbbbbb;text-align: center;width:6.65625rem;}
+.choose_fenlei .little_fenlei_ul{display:none;position: absolute;left: -13.34375rem;width: 20rem;background: #fff;color: #000;}
+.choose_fenlei li{border-bottom: 1px solid #f0f0f0;}
+.choose_fenlei li a{display: block;}
+.paixu .active{color: #ff7200;}
+.choose_img{width: 0.59375rem;height: 0.34375rem;padding-top: 1.125rem;padding-left: 0.15625rem;}
+.biao{width: 0.8125rem;height: 0.8125rem;margin-top:0.8125rem ;margin-right: 0.15625rem;}
+.turn_right{float: right;padding-right: 0.78125rem;padding-top: 1.125rem;width: 0.375rem;height: 0.40625rem;}
+.choose_name{max-width: 5.3125rem;display:inline-block;vertical-align:top;overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;}
+    .all_fenlei_ul{top: 2.5rem;}
+    .little_fenlei_ul{top: 2.5rem;}
+/*列表*/
+ .youxuan{background: #fff;}
+.youxuan li{border-bottom: 1px solid #e0e0e0;}
+ .youxuan p{border-bottom: 1px solid #ccc;background: #fff;line-height: 1.875rem;font-size: .75rem;color: #888888;width: 20rem;}
+   .youxuan p img{padding: 0 0.3125rem 0 0.59375rem;width: 0.8125rem;height: 0.90625rem;
+   margin-top: 0.4375rem;}
+   .youxuan_img{float: left;width: 4.25rem;height: 4.25rem;margin: 0.5625rem 0.625rem 0.625rem 0.5625rem;}
+ 
+ .youxuan_img img{width: 4.25rem;height: 4.25rem;}
+.youxuan .content{float: left;width: 13.75rem;}
+.youxuan .name{font-size: .75rem;color: #000;color: #5a5a5a;margin-top: 0.4375rem;}
+.youxuan .detail{margin-top: 0.5625rem;
+	font-size: 0.625rem;
+	color: #888888;
+	width:13.75rem;
+	    overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;}
+.youxuan .price{font-size: .75rem;color: #ed7601;margin-top: 0.5rem;}
+.past_price{font-size: 0.625rem;font-weight: normal;color: #888888;padding-left: .75rem;}
+.youxuan .sold{font-size: 0.625rem;color: #bbbbbb;float: right;}
+
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+
+		<link rel="stylesheet" type="text/css" href="css/youhui_shuoming.css" />
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<meta name="viewport" content="width=device-width,initial-scale=0.5,minimum-scale=0.5,maximum-scale=0.5,user-scalable=no" />
+		<script type="text/javascript">
+			(function(doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if(!clientWidth) return;
+						docEl.style.fontSize = 50 * (clientWidth / 320) + 'px';
+					};
+
+				if(!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+	</head>
+
+	<body>
+		<div class="head">
+			优惠券使用说明
+			<img src="img/back.png" class="return_img" onClick="javascript:history.back(-1);" alt="" />
+		</div>
+		<div class="wrap">
+			<div class="rule">
+				<p>1.什么是优惠券？</p>
+				<div>优惠券是T购商城发行和认可的购物券，可以在T购商城消费付款时抵扣相应面值的金额。</div>
+			</div>
+			<div class="rule">
+				<p>2.如何获取优惠券？</p>
+				<div>T购商城客户端和网站会不定期的推出优惠券活动，用户可经常关注T购商城，关注弹出的活动通知，机会不容错过！</div>
+			</div>
+			<div class="rule">
+				<p>3.如何使用优惠券？</p>
+				<div>在网站和手机端付款时，都可以选择使用优惠券，在结算页面可以选择是否使用优惠券，抵扣相应的金额。</div>
+			</div>
+			<div class="rule">
+				<p>4.优惠券找零兑现吗？</p>
+				<div>优惠券不找零，不兑现。付款时优惠券会被有限使用，不足支付时则需要使用其他支付方式补足剩余金额。</div>
+			</div>
+			<div class="rule">
+				<p>T购商城客服电话：<span class="number">4000-862-860</span></p>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function() {
+				$(".choose_list li").click(function() {
+					$(this).addClass("active").siblings().removeClass("active");
+				})
+			})
+		</script>
+	</body>
+
+</html>

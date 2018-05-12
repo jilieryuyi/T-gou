@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+
+		<link rel="stylesheet" type="text/css" href="css/youhui.css" />
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<meta name="viewport" content="width=device-width,initial-scale=0.5,minimum-scale=0.5,maximum-scale=0.5,user-scalable=no" />
+		<script type="text/javascript">
+			(function(doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if(!clientWidth) return;
+						docEl.style.fontSize = 50 * (clientWidth / 320) + 'px';
+					};
+
+				if(!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+	</head>
+
+	<body>
+		<div class="head">
+			我的优惠券
+			<img src="img/back.png" class="return_img" onClick="javascript:history.back(-1);" alt="" />
+			<span class="edit">编辑</span>
+		</div>
+
+		<div class="wrap">
+			<div class="choose_list">
+				<ul class="clearfix">
+					<li class="active">全部(30)</li>
+					<li>未使用(20)</li>
+					<li>已使用(5)</li>
+					<li>已过期(5)</li>
+				</ul>
+			</div>
+			<div class="shuoming">
+				<a href="#">优惠券使用说明</a>
+			</div>
+			<!--优惠券开始-->
+			<div class="youhui">
+				<img src="img/youhui.png" class="y_img" />
+				<div class="edu"><span>￥</span>10</div>
+				<div class="limit">满100元使用</div>
+				<div class="name">现金抵扣优惠券</div>
+				<div class="content">这里写详情描述如满50元可使用。</div>
+				<div class="use"><span class="use_sign">未使用</span><span>有效期至：2016-11-11</span></div>
+				<img src="img/no_chose.png" class="chose" alt="" />
+			</div>
+			<div class="youhui youhui_past">
+				<img src="img/youhui1.png" class="y_img" />
+				<div class="edu"><span>￥</span>10</div>
+				<div class="limit">满100元使用</div>
+				<div class="name">现金抵扣优惠券</div>
+				<div class="content">这里写详情描述如满50元可使用。</div>
+				<div class="use"><span class="use_sign">未使用</span><span>有效期至：2016-11-11</span></div>
+				<img src="img/no_chose.png" class="chose" alt="" />
+			</div>
+		</div>
+		<!--删除-->
+		<div class="option_del">
+			<img src="img/del_img.png" class="win2" alt="">删除
+		</div>
+		<!--删除结束-->
+		<!--弹窗-->
+		<div class="shade">
+			<div class="kuang">
+				<div class="say">您确定要删除这1张优惠券吗?</div>
+				<div class="cancel">取消</div>
+				<div class="confirm">确定</div>
+			</div>
+		</div>
+		<!--弹窗结束-->
+		<script type="text/javascript">
+			$(function() {
+				$(".choose_list li").click(function() {
+						$(this).addClass("active").siblings().removeClass("active");
+					})
+					//点击编辑
+				$(".edit").click(function() {
+					if($(this).text() == "编辑") {
+						$(this).text("取消")
+						$(".chose").show()
+						$(".option_del").show()
+					} else {
+						$(this).text("编辑")
+						$(".chose").hide()
+						$(".option_del").hide()
+					}
+				})
+
+				//点击勾选框
+				$(".chose").click(function() {
+						$(this).attr("src", "img/chose.png")
+					})
+					//点击删除
+				$(".option_del").click(function() {
+						$(".shade").show();
+						$("body").css("overflow", "hidden")
+					})
+					//弹窗点击取消
+				$(".shade .cancel").click(function() {
+					$(".shade").hide();
+					$("body").css("overflow", "visible")
+				})
+				$(".shade .confirm").click(function() {
+					$(".shade").hide();
+					$("body").css("overflow", "visible")
+				})
+			})
+		</script>
+	</body>
+
+</html>

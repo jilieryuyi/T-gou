@@ -1,0 +1,174 @@
+<html style="font-size: 16px;">
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/good_detail.css">
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/hhSwipe.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			td {
+				border-bottom: 1px solid #048F74;
+			}
+		</style>
+		<script type="text/javascript">
+			(function(doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if(!clientWidth) return;
+						docEl.style.fontSize = 16 * (clientWidth / 320) + 'px';
+					};
+
+				if(!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+	</head>
+	<div class="head">
+		T购商城
+		<img src="img/back.png" class="return_img" onClick="javascript:history.back(-1);" alt="" />
+		<a href="#"><img src="img/shop_cart.png" class="cart_turn" alt="" /></a>
+		<a href="#"><img src="img/shoucang.png" class="shoucang_turn" alt="" /></a>
+	</div>
+
+	<body>
+		<div class="wrap">
+			<!--轮播图开始-->
+			<div style="">
+				<article>
+					<div class="scroll_box" id="scroll_img" style="visibility: visible;">
+						<ul class="scroll_wrap" style="width: 1280px;">
+							<li data-index="0">
+								<a href="#">
+									<img class="scroll_img" src="img/detail.png" width="100%">
+								</a>
+							</li>
+							<li data-index="1">
+								<a href="#"><img class="scroll_img" src="img/detail.png" width="100%"></a>
+							</li>
+							<li data-index="2" style=>
+								<a href="#"><img class="scroll_img" src="img/detail.png" width="100%"></a>
+							</li>
+							<li data-index="3" style=>
+								<a href="#"><img class="scroll_img" src="img/detail.png" width="100%"></a>
+							</li>
+						</ul>
+					</div>
+
+					<!--scroll-->
+					<div class="scroll relative">
+						<ul class="scroll_position" id="scroll_position">
+							<li class=" ">
+								<a href="javascript:void(0);"></a>
+							</li>
+							<li class="on">
+								<a href="javascript:void(0);"></a>
+							</li>
+							<li class=" ">
+								<a href="javascript:void(0);"></a>
+							</li>
+							<li class=" ">
+								<a href="javascript:void(0);"></a>
+							</li>
+						</ul>
+					</div>
+					<!--scroll-->
+				</article>
+
+			</div>
+			<!--轮播图结束-->
+			<div class="title_wrap">
+				<div class="shop_title">Cloud 9/九朵云韩国原装正品</div>
+				<div class="shop_second_title">此处写商品描述 此处写商品描述 此处写商品描述</div>
+			</div>
+			<div class="price_now"><span class="bigger">￥</span>35.00<s class="past_price">￥45.00</s> <span class="xiaoliang">已售：100件 </span></div>
+			<div class="guige">
+				<span class="guige_span">规格</span>
+				<ul class="guige_ul">
+					<li class="guige_li guige_li_active">75ml</li>
+					<li class="guige_li">100ml</li>
+
+					<div class="clear"></div>
+				</ul>
+				<div class="clear"></div>
+
+			</div>
+			<div class="item_number">
+				<span class="item_number_number clearfix">数量</span><span class="add_number">-</span><input type="text" class="number_item" value="1" /><span class="add_number">+</span> <span style="margin-left: 2px;">件</span>
+			</div>
+			<div class="pingjia"><span>共<b>0</b>人评价</span>
+				<a class="see">查看评价<img src="img/turn_detail.png" alt="" /></a>
+			</div>
+			<div class="shangjia clearfix">
+				<img class="sh_img" src="img/shang.png" />
+				<div class="shangjia_wrap">
+					<div class="name">黑龙江家多福</div>
+					<div class="content">黑龙江省哈尔滨市五河路定海大厦10号 滨市五河路定海
+					</div>
+
+				</div>
+				<a href="tel:10010"><img src="img/phone.png" class="phone" /></a>
+			</div>
+			<div class="img_arti_detail">图文详情</div>
+			<div class="img_detail"><img src="img/good_detail.png" width="100%" alt="" /></div>
+		</div>
+		<div class="shop_choose">
+			<div class="sj">
+				<a href="#"><img src="img/shangjia.png" alt="" />商家</a>
+			</div>
+			<div class="add_cart">加入购物车</div>
+			<div class="buy_now">
+				<a href="shopping_car.html">立即购买</a>
+			</div>
+			<div class="clear"></div>
+		</div>
+
+		<script type="text/javascript">
+			$(".add_cart").click(function() {
+					$(this).html('已加入购物车')
+				})
+				//规格标题大小
+			$(".guige_span").height($(".guige").height())
+				//选择规格
+			$(".guige_li").click(function() {
+				$(this).addClass("guige_li_active").siblings(".guige_li_active").removeClass("guige_li_active");
+			})
+
+			//adv广告轮播
+			var slider = Swipe(document.getElementById('scroll_img'), {
+				auto: 1500,
+				continuous: true,
+				callback: function(pos) {
+					var i = bullets.length;
+					while(i--) {
+						bullets[i].className = ' ';
+					}
+					bullets[pos].className = 'on';
+				}
+			});
+			var bullets = document.getElementById('scroll_position').getElementsByTagName('li');
+
+			$(function() {
+				//中间滚动栏js
+				$(".fenlei").scrollLeft($(".fenlei_img_wrap").width() / 2);
+				window.onload = function() {
+					var fenlei_img = parseFloat($(".fenlei_img_wrap").outerWidth()) + parseFloat($(".fenlei_img_wrap").css("margin-right")) + 8;
+
+					var fenlei_lenth = $(".fenlei_img_wrap").length;
+					var fenleiWrap = Math.ceil(fenlei_lenth * fenlei_img);
+
+					$(".scroll_fenlei_box").width(fenleiWrap);
+				}
+
+				$(".wrap").css("min-height", $(window).height());
+			})
+		</script>
+
+	</body>
+
+</html>

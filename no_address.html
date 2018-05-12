@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+
+		<link rel="stylesheet" type="text/css" href="css/address.css" />
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<meta name="viewport" content="width=device-width,initial-scale=0.5,minimum-scale=0.5,maximum-scale=0.5,user-scalable=no" />
+		<script type="text/javascript">
+			(function(doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if(!clientWidth) return;
+						docEl.style.fontSize = 50 * (clientWidth / 320) + 'px';
+					};
+
+				if(!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+	</head>
+
+	<body>
+		<div class="head">
+			收货地址
+			<img src="img/back.png" class="return_img" onClick="javascript:history.back(-1);" alt="" />
+		</div>
+		<div style="position: fixed;top: 50%;left: 50%;transform: translate(-50%,-50%);">
+			<img src="img/Tgou.png" style="width: 1.14rem;display: block;margin: 0 auto;padding-bottom: .22rem;" alt="" />
+			<div style="font-size: .24rem;white-space: nowrap;color: #757575;">没有收货地址，请添加收货地址</div>
+		</div>
+		<div class="wrap">
+			<span onclick="showInfo()">点我弹窗</span>
+			<div class="show_info" style="">你输入的信息有误</div>
+			<style type="text/css">
+				.show_info {
+					color: #fff;
+					background: #484848;
+					font-size: .24rem;
+					display: inline;
+					padding: .07rem .12rem;
+					border-radius: 10px;
+					position: absolute;
+					position: fixed;
+					bottom: 10%;
+					left: 50%;
+					transform: translateX(-50%);
+					display: none;
+				}
+			</style>
+			<script type="text/javascript">
+				function showInfo() {
+					if(!$(".show_info").is(":animated")) {
+						$(".show_info").fadeIn(2000);
+						$(".show_info").fadeOut(2000);
+					}
+				}
+			</script>
+		</div>
+		</div>
+	</body>
+
+</html>

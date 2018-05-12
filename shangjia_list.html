@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/shangjia_list.css" />
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/hhSwipe.js" type="text/javascript" charset="utf-8"></script>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script type="text/javascript">
+			(function(doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if(!clientWidth) return;
+						docEl.style.fontSize = 16 * (clientWidth / 320) + 'px';
+					};
+
+				if(!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+	</head>
+
+	<body>
+		
+		<div class="head">
+			商家 - 南宁
+			<img src="img/back.png" class="return_img" onClick="javascript:history.back(-1);" alt="" />
+			<a href="#" class="search"><img src="img/search.png" alt="" /></a>
+		</div>
+		<div class="wrap">
+			<div class="paixu clearfix">
+				<!--当三级分类没有时，二级分类的a链接是可以直接搜索的-->
+				<div class="all_fenlei"><img src="img/c1.png" class="biao" alt="" /><span class="choose_name">全部分类</span><img src="img/choose_down.png" class="choose_img" alt="" />
+					<ul class="all_fenlei_ul">
+
+						<li>
+							<a href="javascript:void(0)">全部分类</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">特产零食<img src="img/turn_right.png" class="turn_right" alt="" /></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">特产零食<img src="img/turn_right.png" class="turn_right" alt="" /></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">特产零食<img src="img/turn_right.png" class="turn_right" alt="" /></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">特产零食<img src="img/turn_right.png" class="turn_right" alt="" /></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">特产零食<img src="img/turn_right.png" class="turn_right" alt="" /></a>
+						</li>
+
+					</ul>
+					<div class="hover_list">
+						<ul>
+
+							<li>
+								<a href="#">全部分类</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="#">全部</a>
+							</li>
+							<li>
+								<a href="#">gg</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="choose_city">
+					<img src="img/c2.png" class="biao" /><span class="choose_name">全区</span><img src="img/choose_down.png" class="choose_img" alt="" />
+					<ul class="little_fenlei_ul">
+						<li>
+							<a href="#">兴宁区</a>
+						</li>
+						<li>
+							<a href="#">良庆区</a>
+						</li>
+						<li>
+							<a href="#">青秀区</a>
+						</li>
+						<li>
+							<a href="#">高新区</a>
+						</li>
+						<li>
+							<a href="#">大沙田</a>
+						</li>
+						<li>
+							<a href="#">郊区</a>
+						</li>
+
+					</ul>
+				</div>
+
+				<div class="choose_fenlei">
+					<img src="img/c3.png" class="biao" alt="" />
+					<span class="choose_name">默认</span><img src="img/choose_up.png" class="choose_img" alt="" />
+					<ul class="little_fenlei_ul">
+						<li>
+							<a href="#">默认</a>
+						</li>
+						<li>
+							<a href="#">好评</a>
+						</li>
+						<li>
+							<a href="#">最新</a>
+						</li>
+						<li>
+							<a href="#">销量</a>
+						</li>
+						<li>
+							<a href="#">价格最高</a>
+						</li>
+						<li>
+							<a href="#">价格最低</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+			<div class="dingwei">当前：定位中/或南宁青秀区<img src="img/refresh.png" class="refresh" alt="" /></div>
+			<div class="city_s">
+				<div style="position: fixed;top: 50%;left:0%;width: 100%;text-align: center;">
+			<img src="img/Tgou.png" style="width: 3.5625rem;display: block;margin: 0 auto;padding-bottom: 0.6875rem;" alt="" />
+			<div style="font-size: .75rem;white-space: nowrap;color: #757575;">暂时没有信息哦</div>
+		</div>
+				<!--<ul>
+					<li class="clearfix">
+
+						<img src="" class="c_img" alt="" />
+						<div class="c_wrap">
+							<div class="c_title">云南过桥米线</div>
+							<div class="c_content">这里是地址地址万象城4楼地址地址万象城4楼</div>
+						</div>
+					</li>
+					<li class="clearfix">
+
+						<img src="" class="c_img" alt="" />
+						<div class="c_wrap">
+							<div class="c_title">云南过桥米线</div>
+							<div class="c_content">这里是地址地址万象城4楼地址地址万象城4楼</div>
+						</div>
+					</li>
+					<li class="clearfix">
+
+						<img src="" class="c_img" alt="" />
+						<div class="c_wrap">
+							<div class="c_title">云南过桥米线</div>
+							<div class="c_content">这里是地址地址万象城4楼地址地址万象城4楼</div>
+						</div>
+					</li>
+					<li class="clearfix">
+
+						<img src="" class="c_img" alt="" />
+						<div class="c_wrap">
+							<div class="c_title">云南过桥米线</div>
+							<div class="c_content">这里是地址地址万象城4楼地址地址万象城4楼</div>
+						</div>
+					</li>
+				</ul>-->
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			function hideAF() {
+				$(".all_fenlei").css("color", "#BBBBBB")
+				$(".all_fenlei .biao").attr("src", "img/c1.png")
+				$(".all_fenlei .choose_img").attr("src", "img/choose_up.png")
+				$(".all_fenlei .all_fenlei_ul").hide()
+				$(".all_fenlei .hover_list").hide()
+			}
+
+			function hideCFL() {
+				$(".choose_fenlei").css("color", "#BBBBBB")
+				$(".choose_fenlei .biao").attr("src", "img/c1.png")
+				$(".choose_fenlei .choose_img").attr("src", "img/choose_up.png")
+				$(".choose_fenlei .little_fenlei_ul").hide()
+			}
+
+			function hideCCT() {
+				$(".choose_city").css("color", "#BBBBBB")
+				$(".choose_city .biao").attr("src", "img/c1.png")
+				$(".choose_city .choose_img").attr("src", "img/choose_up.png")
+				$(".choose_city .little_fenlei_ul").hide()
+			}
+			$(function() {
+				$(".choose_fenlei").click(function(e) {
+					if($(".all_fenlei").css("color") == "rgb(255, 114, 0)") {
+						hideAF();
+					}
+					if($(".choose_city").css("color") == "rgb(255, 114, 0)") {
+						hideCCT();
+					}
+					if($(".choose_fenlei").css("color") != "rgb(255, 114, 0)" && !$(".choose_fenlei .little_fenlei_ul").is(":visible")) {
+						$(".choose_fenlei").css("color", "#FF7200")
+						$(".choose_fenlei .biao").attr("src", "img/c1_a.png")
+						$(".choose_fenlei .choose_img").attr("src", "img/choose_up_a.png")
+						$(".choose_fenlei .little_fenlei_ul").show()
+
+					} else if($(".choose_fenlei").css("color") == "rgb(255, 114, 0)" && !$(".choose_fenlei .little_fenlei_ul").is(":visible")) {
+						$(".choose_fenlei").css("color", "#FF7200")
+						$(".choose_fenlei .biao").attr("src", "img/c1_a.png")
+						$(".choose_fenlei .choose_img").attr("src", "img/choose_up_a.png")
+						$(".choose_fenlei .little_fenlei_ul").show()
+					} else {
+						hideCFL();
+
+					}
+				})
+				$(".choose_fenlei .little_fenlei_ul li").click(function(e) {
+					$(this).css({
+						"color": "#FF7200",
+						"background": "#f4f4f4"
+					}).siblings().css({
+						"color": "#000",
+						"background": "#fff"
+					})
+					$(this).parent().hide()
+					e.stopPropagation();
+				})
+
+				//区域
+				$(".choose_city").click(function(e) {
+					if($(".all_fenlei").css("color") == "rgb(255, 114, 0)") {
+						hideAF();
+					}
+					if($(".choose_fenlei").css("color") == "rgb(255, 114, 0)") {
+						hideCFL();
+					}
+
+					if($(".choose_city").css("color") != "rgb(255, 114, 0)" && !$(".choose_city .little_fenlei_ul").is(":visible")) {
+						$(".choose_city").css("color", "#FF7200")
+						$(".choose_city .biao").attr("src", "img/c1_a.png")
+						$(".choose_city .choose_img").attr("src", "img/choose_up_a.png")
+						$(".choose_city .little_fenlei_ul").show()
+
+					} else if($(".choose_city").css("color") == "rgb(255, 114, 0)" && !$(".choose_city .little_fenlei_ul").is(":visible")) {
+						$(".choose_city .little_fenlei_ul").show()
+					} else {
+						hideCCT();
+
+					}
+				})
+				$(".choose_city .little_fenlei_ul li").click(function(e) {
+					$(this).css({
+						"color": "#FF7200",
+						"background": "#f4f4f4"
+					}).siblings().css({
+						"color": "#000",
+						"background": "#fff"
+					})
+					$(this).parent().hide();
+					e.stopPropagation();
+				})
+			})
+		</script>
+		<script type="text/javascript">
+			//全部分类
+			$(".all_fenlei").click(function(e) {
+				if($(".choose_city").css("color") == "rgb(255, 114, 0)") {
+					hideCCT();
+				}
+				if($(".choose_fenlei").css("color") == "rgb(255, 114, 0)") {
+					hideCFL();
+				}
+				if(!$(".all_fenlei_ul").is(":visible") || $(".choose_fenlei").css("color") == "rgb(255, 114, 0)") {
+					$(".all_fenlei").css("color", "#FF7200")
+					$(".all_fenlei .biao").attr("src", "img/c1_a.png")
+					$(".all_fenlei .choose_img").attr("src", "img/choose_up_a.png")
+					$(".all_fenlei .all_fenlei_ul").show()
+
+					$(".all_fenlei_ul li").eq(0).trigger("click")
+				} else if(!$(".all_fenlei_ul").is(":visible") || $(".choose_fenlei").css("color") == "rgb(255, 114, 0)") {
+					$(".all_fenlei").css("color", "#FF7200")
+					$(".all_fenlei .biao").attr("src", "img/c1_a.png")
+					$(".all_fenlei .choose_img").attr("src", "img/choose_up_a.png")
+					$(".all_fenlei .all_fenlei_ul").show()
+
+					$(".all_fenlei_ul li").eq(0).trigger("click")
+				} else {
+					hideAF();
+				}
+			})
+			$(".all_fenlei .all_fenlei_ul li").click(function(e) {
+				$(this).css({
+					"color": "#FF7200",
+					"background": "#f4f4f4"
+				}).siblings().css({
+					"color": "#000",
+					"background": "#fff"
+				})
+				$(".all_fenlei .hover_list").show();
+				$(".all_fenlei .hover_list ul").eq($(this).index()).show().siblings("ul").hide();
+
+				e.stopPropagation();
+			})
+
+			$(".hover_list li").click(function(e) {
+				$(this).css({
+					"color": "#FF7200",
+					"background": "#f4f4f4"
+				}).siblings().css({
+					"color": "#000",
+					"background": "#fff"
+				})
+				$(".all_fenlei .all_fenlei_ul").hide();
+				$(".all_fenlei .hover_list").hide();
+
+				e.stopPropagation();
+			})
+
+			window.onload = function() {
+				var ss = $(window).height() - $(".head").height() - $(".paixu").height();
+				$(".hover_list").css("max-height", ss)
+				$(".all_fenlei_ul").css("max-height", ss)
+				$(".little_fenlei_ul").css("max-height", ss)
+				$(".hover_list ul").css("max-height", ss)
+			}
+		</script>
+	</body>
+
+</html>

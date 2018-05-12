@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/list.css" />
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/hhSwipe.js" type="text/javascript" charset="utf-8"></script>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=0.5,user-scalable=no" />
+		<script type="text/javascript">
+			(function(doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if(!clientWidth) return;
+						docEl.style.fontSize = 16 * (clientWidth / 320) + 'px';
+					};
+
+				if(!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+	</head>
+
+	<body>
+		<div class="head">
+			商家 - 南宁
+			<img src="img/back.png" class="return_img" onClick="javascript:history.back(-1);" alt="" />
+			<a href="#" class="search"><img src="img/search.png" alt="" /></a>
+		</div>
+		<div class="wrap">
+			<div class="paixu clearfix">
+				<!--当三级分类没有时，二级分类的a链接是可以直接搜索的-->
+				<div class="all_fenlei"><img src="img/c1.png" class="biao" alt="" /><span class="choose_name">全部分类</span><img src="img/choose_down.png" class="choose_img" alt="" />
+					<ul class="all_fenlei_ul">
+
+						<li>
+							<a href="javascript:void(0)">全部分类</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">特产零食<img src="img/turn_right.png" class="turn_right" alt="" /></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">特产零食<img src="img/turn_right.png" class="turn_right" alt="" /></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">特产零食<img src="img/turn_right.png" class="turn_right" alt="" /></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">特产零食<img src="img/turn_right.png" class="turn_right" alt="" /></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">特产零食<img src="img/turn_right.png" class="turn_right" alt="" /></a>
+						</li>
+
+					</ul>
+					<div class="hover_list">
+						<ul>
+
+							<li>
+								<a href="#">全部分类</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="#">全部</a>
+							</li>
+							<li>
+								<a href="#">gg</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="choose_city"><img src="img/c2.png" class="biao" /><span class="choose_name">南宁</span><img src="img/choose_down.png" class="choose_img" alt="" />
+					<ul class="all_fenlei_ul">
+						<li>
+							<a href="javascript:void(0)">全部城市</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">北京<img src="img/turn_right.png" class="turn_right" alt="" /></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">北京<img src="img/turn_right.png" class="turn_right" alt="" /></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">北京<img src="img/turn_right.png" class="turn_right" alt="" /></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">南宁<img src="img/turn_right.png" class="turn_right" alt="" /></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">北京<img src="img/turn_right.png" class="turn_right" alt="" /></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">南宁<img src="img/turn_right.png" class="turn_right" alt="" /></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">北京<img src="img/turn_right.png" class="turn_right" alt="" /></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">南宁<img src="img/turn_right.png" class="turn_right" alt="" /></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">北京<img src="img/turn_right.png" class="turn_right" alt="" /></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">南宁<img src="img/turn_right.png" class="turn_right" alt="" /></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">北京<img src="img/turn_right.png" class="turn_right" alt="" /></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">南宁<img src="img/turn_right.png" class="turn_right" alt="" /></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">北京<img src="img/turn_right.png" class="turn_right" alt="" /></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">南宁<img src="img/turn_right.png" class="turn_right" alt="" /></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">北京<img src="img/turn_right.png" class="turn_right" alt="" /></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">南宁<img src="img/turn_right.png" class="turn_right" alt="" /></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">北京<img src="img/turn_right.png" class="turn_right" alt="" /></a>
+						</li>
+						v
+						<li>
+							<a href="javascript:void(0)">南宁<img src="img/turn_right.png" class="turn_right" alt="" /></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">北京<img src="img/turn_right.png" class="turn_right" alt="" /></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">南宁<img src="img/turn_right.png" class="turn_right" alt="" /></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">北京<img src="img/turn_right.png" class="turn_right" alt="" /></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">南宁<img src="img/turn_right.png" class="turn_right" alt="" /></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">北京<img src="img/turn_right.png" class="turn_right" alt="" /></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">南宁<img src="img/turn_right.png" class="turn_right" alt="" /></a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">北京<img src="img/turn_right.png" class="turn_right" alt="" /></a>
+						</li>
+					</ul>
+					<div class="hover_list">
+						<ul>
+							<li>
+								<a href="#">南宁</a>
+							</li>
+							<li>
+								<a href="#">柳州</a>
+							</li>
+							<li>
+								<a href="#">南宁</a>
+							</li>
+							<li>
+								<a href="#">柳州</a>
+							</li>
+							<li>
+								<a href="#">南宁</a>
+							</li>
+							<li>
+								<a href="#">柳州</a>
+							</li>
+							<li>
+								<a href="#">南宁</a>
+							</li>
+							<li>
+								<a href="#">柳州</a>
+							</li>
+							<li>
+								<a href="#">南宁</a>
+							</li>
+							<li>
+								<a href="#">柳州</a>
+							</li>
+							<li>
+								<a href="#">南宁</a>
+							</li>
+							<li>
+								<a href="#">柳州</a>
+							</li>
+							<li>
+								<a href="#">南宁</a>
+							</li>
+							<li>
+								<a href="#">柳州</a>
+							</li>
+							<li>
+								<a href="#">南宁</a>
+							</li>
+							<li>
+								<a href="#">柳州</a>
+							</li>
+							<li>
+								<a href="#">南宁</a>
+							</li>
+							<li>
+								<a href="#">柳州</a>
+							</li>
+							<li>
+								<a href="#">南宁</a>
+							</li>
+							<li>
+								<a href="#">柳州</a>
+							</li>
+							<li>
+								<a href="#">南宁</a>
+							</li>
+							<li>
+								<a href="#">柳州</a>
+							</li>
+							<li>
+								<a href="#">南宁</a>
+							</li>
+							<li>
+								<a href="#">柳州</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="#">北京</a>
+							</li>
+							<li>
+								<a href="#">北京</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="choose_fenlei"><img src="img/c3.png" class="biao" alt="" /><span class="choose_name">默认</span><img src="img/choose_up.png" class="choose_img" alt="" />
+					<ul class="little_fenlei_ul">
+						<li>
+							<a href="#">默认</a>
+						</li>
+						<li>
+							<a href="#">好评</a>
+						</li>
+						<li>
+							<a href="#">最新</a>
+						</li>
+						<li>
+							<a href="#">销量</a>
+						</li>
+						<li>
+							<a href="#">价格最高</a>
+						</li>
+						<li>
+							<a href="#">价格最低</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+			<script type="text/javascript">
+				$(function() {
+					$(".choose_fenlei").click(function(e) {
+						if($(".all_fenlei").css("color") == "rgb(255, 114, 0)") {
+							$(".all_fenlei").trigger("click")
+						}
+						if($(".choose_city").css("color") == "rgb(255, 114, 0)") {
+							$(".choose_city").trigger("click")
+						}
+						if(!$(".little_fenlei_ul").is(":visible")) {
+							$(".choose_fenlei").css("color", "#FF7200")
+							$(".choose_fenlei .biao").attr("src", "img/c1_a.png")
+							$(".choose_fenlei .choose_img").attr("src", "img/choose_up_a.png")
+							$(".choose_fenlei .little_fenlei_ul").show()
+
+						} else {
+							$(".choose_fenlei").css("color", "#BBBBBB")
+							$(".choose_fenlei .biao").attr("src", "img/c1.png")
+							$(".choose_fenlei .choose_img").attr("src", "img/choose_up.png")
+							$(".choose_fenlei .little_fenlei_ul").hide()
+
+						}
+					})
+					$(".little_fenlei_ul li").click(function(e) {
+						$(this).css({
+							"color": "#FF7200",
+							"background": "#f4f4f4"
+						}).siblings().css({
+							"color": "#000",
+							"background": "#fff"
+						})
+						e.stopPropagation();
+					})
+				})
+			</script>
+			<div class="youxuan">
+				<ul>
+					<li class="clearfix">
+						<div class="youxuan_img"><img src="" alt="" /></div>
+						<div class="content">
+							<div class="name">寿乡农场罗汉果</div>
+							<div class="detail">此处写商品描述商品描述此处写商品描述商品描述 此处写商品描述商品描述
+							</div>
+							<div class="price">￥88<s class="past_price">￥45.00</s> <span class="sold">  已售2005</span></div>
+						</div>
+					</li>
+					<li class="clearfix">
+						<div class="youxuan_img"><img src="" alt="" /></div>
+						<div class="content">
+							<div class="name">寿乡农场罗汉果</div>
+							<div class="detail">此处写商品描述商品描述此处写商品描述商品描述 此处写商品描述商品描述
+							</div>
+							<div class="price">￥88<s class="past_price">￥45.00</s> <span class="sold">  已售2005</span></div>
+						</div>
+					</li>
+					<li class="clearfix">
+						<div class="youxuan_img"><img src="" alt="" /></div>
+						<div class="content">
+							<div class="name">寿乡农场罗汉果</div>
+							<div class="detail">此处写商品描述商品描述此处写商品描述商品描述 此处写商品描述商品描述
+							</div>
+							<div class="price">￥88<s class="past_price">￥45.00</s> <span class="sold">  已售2005</span></div>
+						</div>
+					</li>
+					<li class="clearfix">
+						<div class="youxuan_img"><img src="" alt="" /></div>
+						<div class="content">
+							<div class="name">寿乡农场罗汉果</div>
+							<div class="detail">此处写商品描述商品描述此处写商品描述商品描述 此处写商品描述商品描述
+							</div>
+							<div class="price">￥88<s class="past_price">￥45.00</s> <span class="sold">  已售2005</span></div>
+						</div>
+					</li>
+					<li class="clearfix">
+						<div class="youxuan_img"><img src="" alt="" /></div>
+						<div class="content">
+							<div class="name">寿乡农场罗汉果</div>
+							<div class="detail">此处写商品描述商品描述此处写商品描述商品描述 此处写商品描述商品描述
+							</div>
+							<div class="price">￥88<s class="past_price">￥45.00</s> <span class="sold">  已售2005</span></div>
+						</div>
+					</li>
+					<li class="clearfix">
+						<div class="youxuan_img"><img src="" alt="" /></div>
+						<div class="content">
+							<div class="name">寿乡农场罗汉果</div>
+							<div class="detail">此处写商品描述商品描述此处写商品描述商品描述 此处写商品描述商品描述
+							</div>
+							<div class="price">￥88<s class="past_price">￥45.00</s> <span class="sold">  已售2005</span></div>
+						</div>
+					</li>
+					<li class="clearfix">
+						<div class="youxuan_img"><img src="" alt="" /></div>
+						<div class="content">
+							<div class="name">寿乡农场罗汉果</div>
+							<div class="detail">此处写商品描述商品描述此处写商品描述商品描述 此处写商品描述商品描述
+							</div>
+							<div class="price">￥88<s class="past_price">￥45.00</s> <span class="sold">  已售2005</span></div>
+						</div>
+					</li>
+					<li class="clearfix">
+						<div class="youxuan_img"><img src="" alt="" /></div>
+						<div class="content">
+							<div class="name">寿乡农场罗汉果</div>
+							<div class="detail">此处写商品描述商品描述此处写商品描述商品描述 此处写商品描述商品描述
+							</div>
+							<div class="price">￥88<s class="past_price">￥45.00</s> <span class="sold">  已售2005</span></div>
+						</div>
+					</li>
+					<li class="clearfix">
+						<div class="youxuan_img"><img src="" alt="" /></div>
+						<div class="content">
+							<div class="name">寿乡农场罗汉果</div>
+							<div class="detail">此处写商品描述商品描述此处写商品描述商品描述 此处写商品描述商品描述
+							</div>
+							<div class="price">￥88<s class="past_price">￥45.00</s> <span class="sold">  已售2005</span></div>
+						</div>
+					</li>
+					<li class="clearfix">
+						<div class="youxuan_img"><img src="" alt="" /></div>
+						<div class="content">
+							<div class="name">寿乡农场罗汉果</div>
+							<div class="detail">此处写商品描述商品描述此处写商品描述商品描述 此处写商品描述商品描述
+							</div>
+							<div class="price">￥88<s class="past_price">￥45.00</s> <span class="sold">  已售2005</span></div>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			//全部分类
+			$(".all_fenlei").click(function(e) {
+				if($(".choose_city").css("color") == "rgb(255, 114, 0)") {
+					$(".choose_city").trigger("click")
+				}
+				if($(".choose_fenlei").css("color") == "rgb(255, 114, 0)") {
+					$(".choose_fenlei").trigger("click")
+				}
+				if(!$(".all_fenlei_ul").is(":visible")) {
+					$(".all_fenlei").css("color", "#FF7200")
+					$(".all_fenlei .biao").attr("src", "img/c1_a.png")
+					$(".all_fenlei .choose_img").attr("src", "img/choose_up_a.png")
+					$(".all_fenlei .all_fenlei_ul").show()
+
+					$(".all_fenlei_ul li").eq(0).trigger("click")
+				} else {
+					$(".all_fenlei").css("color", "#BBBBBB")
+					$(".all_fenlei .biao").attr("src", "img/c1.png")
+					$(".all_fenlei .choose_img").attr("src", "img/choose_up.png")
+					$(".all_fenlei .all_fenlei_ul").hide()
+					$(".all_fenlei .hover_list").hide()
+
+				}
+			})
+			$(".all_fenlei .all_fenlei_ul li").click(function(e) {
+					$(this).css({
+						"color": "#FF7200",
+						"background": "#f4f4f4"
+					}).siblings().css({
+						"color": "#000",
+						"background": "#fff"
+					})
+					$(".all_fenlei .hover_list").show();
+					$(".all_fenlei .hover_list ul").eq($(this).index()).show().siblings("ul").hide();
+					e.stopPropagation();
+				})
+				//全部城市
+			$(".choose_city").click(function(e) {
+				if($(".all_fenlei").css("color") == "rgb(255, 114, 0)") {
+					$(".all_fenlei").trigger("click")
+				}
+				if($(".choose_fenlei").css("color") == "rgb(255, 114, 0)") {
+					$(".choose_fenlei").trigger("click")
+				}
+				if(!$(".all_fenlei_ul").is(":visible")) {
+					$(".choose_city").css("color", "#FF7200")
+					$(".choose_city .biao").attr("src", "img/c2_a.png")
+					$(".choose_city .choose_img").attr("src", "img/choose_up_a.png")
+					$(".choose_city .all_fenlei_ul").show()
+					$(".choose_city li").eq(0).trigger("click")
+				} else {
+					$(".choose_city").css("color", "#BBBBBB")
+					$(".choose_city .biao").attr("src", "img/c2.png")
+					$(".choose_city .choose_img").attr("src", "img/choose_up.png")
+					$(".choose_city .all_fenlei_ul").hide()
+					$(".choose_city .hover_list").hide()
+
+				}
+			})
+			$(".choose_city .all_fenlei_ul li").click(function(e) {
+				$(this).css({
+					"color": "#FF7200",
+					"background": "#f4f4f4"
+				}).siblings().css({
+					"color": "#000",
+					"background": "#fff"
+				})
+				$(".choose_city .hover_list").show();
+				$(".choose_city .hover_list ul").eq($(this).index()).show().siblings("ul").hide();
+				e.stopPropagation();
+			})
+			window.onload = function() {
+				var ss = $(window).height() - $(".head").height() - $(".paixu").height();
+				$(".hover_list").css("max-height", ss)
+				$(".all_fenlei_ul").css("max-height", ss)
+				$(".little_fenlei_ul").css("max-height", ss)
+				$(".hover_list ul").css("max-height", ss)
+			}
+		</script>
+	</body>
+
+</html>

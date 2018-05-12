@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+
+		<link rel="stylesheet" type="text/css" href="css/choose_city.css" />
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<meta name="viewport" content="width=device-width,initial-scale=0.5,minimum-scale=0.5,maximum-scale=0.5,user-scalable=no" />
+		<script type="text/javascript">
+			(function(doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if(!clientWidth) return;
+						docEl.style.fontSize = 50 * (clientWidth / 320) + 'px';
+					};
+
+				if(!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+	</head>
+
+	<body>
+		<div class="head">
+			选择城市
+			<img src="img/back.png" class="return_img" onClick="javascript:history.back(-1);" alt="" />
+			<a href="#"><img src="img/shoucang.png" class="shoucang_turn" alt="" /></a>
+		</div>
+		<div class="wrap">
+			<div class="search_box">
+				<input type="text" /><img src="img/search_img.png" />
+			</div>
+			<div class="location"><img src="img/location2.png" alt="" />
+				<div>定位失败，点击重试</div>
+			</div>
+			<div class="choose_city" style="position: relative;">
+				<p>全国</p>
+				<ul>
+					<li></li>
+				</ul>
+				<p><span id="a"></span>A</p>
+				<ul>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+				</ul>
+				<p><span id="b"></span>B</p>
+				<ul>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+				</ul>
+				<p><span id="c"></span>C</p>
+				<ul>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+				</ul>
+				<p><span id="d"></span>D</p>
+				<ul>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+				</ul>
+				<p><span id="e"></span>E</p>
+				<ul>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+				</ul>
+				<p><span id="f"></span>F</p>
+				<ul>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+				</ul>
+				<p><span id="g"></span>G</p>
+				<ul>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+				</ul>
+				<p><span id="h"></span>H</p>
+				<ul>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+					<li>
+						<a href="#">北京</a>
+					</li>
+					<li>
+						<a href="#">百色靖西县</a>
+					</li>
+				</ul>
+
+			</div>
+
+			<div class="fixed_choose">
+				<ul>
+					<!--如果href为#a，则对应的P标签id规定为a,可改但名字要一致-->
+					<li>
+						<a href="#a">A</a>
+					</li>
+					<li>
+						<a href="#b">B</a>
+					</li>
+					<li>
+						<a href="#c">C</a>
+					</li>
+					<li>
+						<a href="#d">D</a>
+					</li>
+					<li>
+						<a href="#e">E</a>
+					</li>
+					<li>
+						<a href="#f">F</a>
+					</li>
+					<li>
+						<a href="#g">G</a>
+					</li>
+					<li>
+						<a href="#h">H</a>
+					</li>
+					<li>
+						<a href="#i">I</a>
+					</li>
+					<li>
+						<a href="#j">J</a>
+					</li>
+					<li>
+						<a href="#k">K</a>
+					</li>
+					<li>
+						<a href="#l">L</a>
+					</li>
+					<li>
+						<a href="#m">M</a>
+					</li>
+					<li>
+						<a href="#n">N</a>
+					</li>
+					<li>
+						<a href="#o">O</a>
+					</li>
+					<li>
+						<a href="#p">P</a>
+					</li>
+					<li>
+						<a href="#q">Q</a>
+					</li>
+					<li>
+						<a href="#r">R</a>
+					</li>
+					<li>
+						<a href="#s">S</a>
+					</li>
+					<li>
+						<a href="#t">T</a>
+					</li>
+					<li>
+						<a href="#u">U</a>
+					</li>
+					<li>
+						<a href="#v">V</a>
+					</li>
+					<li>
+						<a href="#w">W</a>
+					</li>
+					<li>
+						<a href="#x">X</a>
+					</li>
+					<li>
+						<a href="#y">Y</a>
+					</li>
+					<li>
+						<a href="#z">Z</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function() {
+				$(".fixed_choose").click(function() {
+					$()
+				})
+			})
+		</script>
+	</body>
+
+</html>

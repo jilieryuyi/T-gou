@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0px;padding:0px;    font-family: "微软雅黑", "Helvetica Neue",Helvetica,Arial,sans-serif;}
+a{text-decoration:none;-webkit-tap-highlight-color:rgba(0,0,0,0);color: inherit;}
+ul li{list-style-type:none;margin: 0; padding: 0;}
+img{border:0px;display:block;}
+.clearfix:after {
+visibility: hidden;
+display: block;
+font-size: 0;
+content: " ";
+clear: both;
+height: 0;
+}
+i{display: block;}
+.clear{clear: both;}
+.clearfix { display: inline-table; }
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* End hide from IE-mac */
+input{outline: 0;}
+body{background:#ff;position: relative;}
+.wrap{width:100%;min-width:320px;margin:0px auto 0px;   padding-bottom: 1.14rem;padding-top: .81rem; }
+.head{color: #808080;text-align: center;background: #ff7200;color: #fff;
+width: 100%;height:.81rem ;line-height: .81rem;
+font-size:.28rem;position: relative;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+}
+
+.head .location{position: absolute;font-size: .75rem;left: .3rem;}
+.head .location img{width: .19rem;height: .13rem;margin-top: 1rem;}
+.head .search{width: .29rem;height: .29rem;}
+.head .search img{width: .29rem;height: .29rem;margin-top: .25rem;position: absolute;right: .29rem;}
+.return_img{width: .18rem;height: .32rem;position: absolute;top: .24rem;left: .35rem;}
+.head .edit{position: absolute;right: .32rem;}
+
+
+/*登录*/
+.login_wrap2{display: none;}
+.choose_way{overflow:hidden;width: 6.06rem;line-height: .58rem;font-size: .26rem;color: #fb6f08;border: 1px solid #FB6F08;margin: .19rem auto .38rem;border-radius:.1rem ;}
+.choose_way a{width: 50%;display: block;float: left;text-align: center;}
+.choose_way .active{background: #fb6f08;color: #fff;}
+
+.login{padding-top: 1rem;position: relative;color: #5a5a5a;width: 6.06rem;margin: 0 auto;border-radius:.1rem ;overflow: hidden;}
+.login input{display: block;
+    width: 6.06rem;
+    box-sizing: border-box;
+    border: none;
+    color: #888888;
+    line-height: .56rem;
+    padding-left: .18rem;
+    font-size: .24rem;}
+.username{border-bottom:4px solid #ff7200 !important;}
+.u_img{position: absolute;top: .32rem;left: .27rem;width: .34rem;height: .25rem;}
+.p_img{position: absolute;top: 1.14rem;left: .27rem;width: .25rem;height: .32rem;}
+::-webkit-input-placeholder{color: #ccc;}
+
+.button{width: 6.06rem;height: .7rem;line-height: .7rem;background: #fb6f08;color: #fff;font-size: .24rem;border-radius:.1rem ;text-align: center;margin: .43rem auto;}

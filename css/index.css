@@ -1,0 +1,77 @@
+img{display: inline-block;vertical-align: top;}
+body{background: #f5f5f5;}
+div,span,li{font-size: .75rem;}
+.logo{width: 3.15625rem;height: 2.15625rem;padding-top: .75rem;padding-left: 0.625rem;}
+.head .location{position: absolute;font-size: .75rem;left: 0.9375rem;}
+.head .location img{width: 0.59375rem;height: 0.40625rem;margin-top: 1rem;}
+.head .search{width: 0.90625rem;height: 0.90625rem;}
+.head .search img{width: 0.90625rem;height: 0.90625rem;margin-top: 0.78125rem;position: absolute;right: 0.90625rem;}
+/*轮播图*/
+/*public scroll（手机触屏滚动）*/
+ article{position:relative;width:100%;min-width:320px;margin:auto;}
+.scroll_box{overflow:hidden;visibility:hidden;position:relative;height: 8.625rem;overflow: hidden;}
+.scroll_wrap{overflow:hidden; position:relative;}
+.scroll_wrap li{position:relative;display:block;width:100%;float:left;height:8.625rem;}
+.scroll_wrap li a{display:block;margin:0 auto;position:relative;}
+div.shop_name{color:#000;font-size:20px;position:absolute;top:2%;left:2%;}
+
+/*修改3*/
+.scroll{margin-top: .12rem;height: .35rem;}
+.scroll_wrap li a img{width: 100%;10.96875rem;}
+.scroll_position{position:absolute;left:35%;z-index:400px;text-align:center;width:30%;}
+.scroll_position li{vertical-align:top;display:inline-block;width:.1rem;height:.1rem;background:#fff;border: 2px solid #ff2d51;}
+.scroll_position li a{font-size:0;}
+.scroll_position li.on{background-color:#ff2d51;}
+.scroll_position_bg{background:#000;position:absolute;bottom:12px;
+	left:35%;padding:0 15px;z-index:380px;height:26px;border-radius:26px;}
+	/*轮播结束*/
+	
+/*分类*/
+.fenlei ul{padding: 0 1.34375rem;padding-bottom: 0.6875;background: #fff;}
+.fenlei li{font-size:0.625rem;color: #888888; margin-top: 1.09375rem;margin-right: 2.3125rem;float: left;width: 2.5625rem;overflow: hidden;}
+.fenlei li:nth-child(4n){margin-right: 0;}
+.fenlei img{width: 2.3125rem;height: 2.3125rem;display: block;}
+.fenlei li div{padding-top: 0.34375rem;font-size:0.625rem;}
+
+/*旅游资讯*/
+.news_center{margin-top: 0.4375rem;margin-bottom: 0.53125rem;border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;background: #fff;line-height: 1.875rem;height: 1.875rem;overflow:hidden;font-size: .75rem;color: #888888;}
+.news_center img{float: left;width: 0.84375rem;height: 0.78125rem;margin-top: 0.53125rem;margin-right: 0.53125rem;margin-left: 0.46875rem;}
+.news_center div{color: #000;font-weight: 800;float: left;margin-right: 0.25rem;}
+.news_center ul{float: left;position: relative;top: 0;}
+.news_center li{width: 13.9375rem;    overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;}
+    
+    /*精品热卖*/
+   .fenbu{margin-bottom: 0.3125rem;}
+   .fenbu p{line-height: 2rem;border-bottom: 1px solid #ccc;background: #fff;line-height: 1.875rem;font-size: .75rem;color: #888888;width: 20rem;}
+   .fenbu p img{padding: 0 0.3125rem 0 0.59375rem;width: 0.8125rem;height: 0.90625rem;margin-top: 0.4375rem;}
+   .fenbu div{background: #ccc;}
+   .zuo1{float: left;width: 9.96875rem;height: 9.9375rem;margin: 0.0625rem 0.0625rem  0.0625 0;}
+   .zuo1 img{width: inherit;height: inherit;}
+.you1{float: left;width: 10rem;height: 9.9375rem;margin-bottom: 0.0625rem;background: #fff !important;}
+.you1 img{    width: inherit;
+    height: 4.9375rem;background: #ccc;}
+    .you1 .second_img{    width: inherit;
+    height: 4.9375rem;margin-top: 0.0625rem;}
+.zuo2{float: left;width: 9.9375rem;height: 5rem;margin-left: .0625rem;float: left;}
+.zuo2 img{width: inherit;height: inherit;}
+.you2{width: 10rem;height: 5rem;float: left;}
+.you2 img{width: inherit;height: inherit;}
+
+/*优选*/
+ .youxuan{background: #fff;}
+ .youxuan li{border-bottom: 1px solid #e0e0e0;}
+ .youxuan p{border-bottom: 1px solid #ccc;background: #fff;line-height: 1.875rem;font-size: .75rem;color: #888888;width: 20rem;}
+   .youxuan p img{padding: 0 0.3125rem 0 0.59375rem;width: 0.8125rem;height: 0.90625rem;
+   margin-top: 0.4375rem;}
+   .youxuan_img{float: left;width: 4.25rem;height: 4.25rem;margin: 0.5625rem 0.625rem 0.625rem 0.5625rem;}
+ 
+ .youxuan_img img{width: 4.25rem;height: 4.25rem;}
+.youxuan .content{float: left;width: 13.75rem;}
+.youxuan .name{font-size: .75rem;color: #000;color: #5a5a5a;margin-top: 0.4375rem;}
+.youxuan .detail{margin-top: .00625rem;font-size: 0.625rem;color: #888888;}
+.youxuan .price{font-size: .75rem;color: #ed7601;margin-top: 0.5rem;}
+.youxuan .sold{font-size: 0.625rem;color: #bbbbbb;float: right;}
+

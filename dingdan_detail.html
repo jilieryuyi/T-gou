@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+
+		<link rel="stylesheet" type="text/css" href="css/dingdan_detail.css" />
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<meta name="viewport" content="width=device-width,initial-scale=0.5,minimum-scale=0.5,maximum-scale=0.5,user-scalable=no" />
+		<script type="text/javascript">
+			(function(doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if(!clientWidth) return;
+						docEl.style.fontSize = 50 * (clientWidth / 320) + 'px';
+					};
+
+				if(!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+	</head>
+
+	<body>
+		<div class="head">
+			订单详情
+			<img src="img/back.png" class="return_img" onClick="javascript:history.back(-1);" alt="" />
+		</div>
+		<div class="wrap">
+			<div class="dingdan">
+				<div class="shangjia"><img src="img/checkbox.png" class="win" alt="" /><img src="img/shangjia.png" class="shangjia_img" />黑龙江梅佳丽商超<span class="state_state" style="">待付款</span></div>
+				<p class="clearfix"><span style="float: left;">订单编号：2016102612062627</span> </p>
+				<div class="shangpin">
+					<ul class="sul">
+						<li class="clearfix">
+							<img src="" class="simg" />
+							<div class="name_wrap">
+								<div class="name">寿乡农场罗汉果</div>
+								<div class="content_name">50g红色<span class="conten_number">x3</span></div>
+								<div class="heji clearfix"><span class="single">单价：<b>￥88.00</b></span><span>小计：<b>￥88.00</b></span></div>
+							</div>
+						</li>
+						<li class="clearfix">
+							<img src="" class="simg" />
+							<div class="name_wrap">
+								<div class="name">寿乡农场罗汉果</div>
+								<div class="content_name">50g红色<span class="conten_number">x3</span></div>
+								<div class="heji clearfix"><span class="single">单价：<b>￥88.00</b></span><span>小计：<b>￥88.00</b></span></div>
+							</div>
+						</li>
+					</ul>
+					<div class="liuyan">
+				<ul>
+					<li>商品总价<span class="feiyong">264元</span></li>
+					<li>运费<span class="feiyong">20元</span></li>
+					<li>优惠券抵扣<span class="feiyong">-10元</span></li>
+					<li>支付方式<span class="feiyong">支付宝wap支付</span></li>
+					<li>应付总额<span class="feiyong">274元</span></li>
+					<li>收货人<span class="feiyong">翁晓月</span></li>
+					<li>收货人电话<span class="feiyong">15478569854</span></li>
+					<li class="shouhuo">收货地址<span class="feiyong">广西南宁市青秀区合作路1号昌泰大厦14层广西
+南宁市青秀区合作路1号昌泰大厦14层</span></li>
+					<li>完成时间<span class="feiyong">2016-12-4  15 : 00</span></li>
+					<li>配送员<span class="feiyong">啷哩个浪</span></li>
+					<li>退款金额<span class="feiyong">0.00</span></li>
+				</ul>
+			</div>
+				</div>
+			</div>
+		
+			<div class="myliuyan">
+				留言：阿基斯达克垃圾堆卢萨卡建档立卡姐弟恋撒娇立刻大叫
+			</div>
+			
+			<div class="total_price">订单总计：<span>￥10.00</span></div>
+		</div>
+	</body>
+	<script type="text/javascript">
+	</script>
+
+</html>

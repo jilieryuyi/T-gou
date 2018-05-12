@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+
+		<link rel="stylesheet" type="text/css" href="css/shangjia_detail.css" />
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<meta name="viewport" content="width=device-width,initial-scale=0.5,minimum-scale=0.5,maximum-scale=0.5,user-scalable=no" />
+		<script type="text/javascript">
+			(function(doc, win) {
+				var docEl = doc.documentElement,
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function() {
+						var clientWidth = docEl.clientWidth;
+						if(!clientWidth) return;
+						docEl.style.fontSize = 50 * (clientWidth / 320) + 'px';
+					};
+
+				if(!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+	</head>
+
+	<body>
+		<div class="head">
+			商家详情
+			<img src="img/back.png" class="return_img" onClick="javascript:history.back(-1);" alt="" />
+			<a href="#"><img src="img/shoucang.png" class="shoucang_turn" alt="" /></a>
+		</div>
+		<div class="wrap">
+			<div class="banner_wrap">
+				<img src="" class="banner" alt="" />
+				<div class="banner_title">碳烤王烧烤店</div>
+			</div>
+			<div class="address clearfix"><span class="address_span"><img src="img/location.png" class="location" alt="" />此处是地址地址地址</span>
+				<a href="tel:10010"><img src="img/phone.png" class="phone" alt="" /></a>
+			</div>
+			<div class="jianjie">
+				<p class="title_p clearfix"><img src="img/s1.png" alt="" /><span>商家简介</span></p>
+				<div class="dian_content mh">这是最好的一家店这是最好，的一家店这是最好的一家店 这是最好的一家店。
+					<img src="img/jianjie.png" style="margin-top: .1rem;" alt="" /> 这是最好的一家店这是最好，的一家店这是最好的一家店这是最好的一家店这是最好，的一家店这是最好的一家店这是最好的一家店这是最好，的一家店这是最好的一家店这是最好的一家店这是最好，的一家店这是最好的一家店这是最好的一家店这是最好，的一家店这是最好的一家店这是最好的一家店这是最好，的一家店这是最好的一家店这是最好的一家店这是最好，的一家店这是最好的一家店这是最好的一家店这是最好，的一家店这是最好的一家店这是最好的一家店这是最好，的一家店这是最好的一家店
+				</div>
+				<div class="more_content">
+					<a href="#">更多</a>
+				</div>
+
+			</div>
+			<div class="item">
+				<p class="title_p clearfix"><img src="img/s2.png" alt="" /><span>该商家的商品</span></p>
+				<ul>
+					<ul>
+						<li class="clearfix">
+							<div class="item_img"><img src="" alt="" /></div>
+							<div class="content">
+								<div class="name">寿乡农场罗汉果</div>
+								<div class="detail">此处写商品描述商品描述此处写商品描述商品描述 此处写商品描述商品描述
+								</div>
+								<div class="price">￥88<s class="past_price">￥45.00</s> <span class="sold">  已售2005</span></div>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="item_img"><img src="" alt="" /></div>
+							<div class="content">
+								<div class="name">寿乡农场罗汉果</div>
+								<div class="detail">此处写商品描述商品描述此处写商品描述商品描述 此处写商品描述商品描述
+								</div>
+								<div class="price">￥88<s class="past_price">￥45.00</s> <span class="sold">  已售2005</span></div>
+							</div>
+						</li>
+						<li class="clearfix">
+							<div class="item_img"><img src="" alt="" /></div>
+							<div class="content">
+								<div class="name">寿乡农场罗汉果</div>
+								<div class="detail">此处写商品描述商品描述此处写商品描述商品描述 此处写商品描述商品描述
+								</div>
+								<div class="price">￥88<s class="past_price">￥45.00</s> <span class="sold">  已售2005</span></div>
+							</div>
+						</li>
+					</ul>
+					<div class="more_content">
+						<a href="#">更多</a>
+					</div>
+			</div>
+			<div class="pingjia">
+				<p class="title_p clearfix"><img src="img/s3.png" alt="" /><span>评价(12)</span></p>
+				<ul>
+					<li class="clearfix">
+						<div class="name clearfix"><span class="name_name">爱哭的雨</span><span class="time">2015-05-16</span></div>
+						<div class="content">味道好！很好！味道好！很好！味道好！很好！味道好！很好！味道 好！很好！
+						</div>
+						<div class="p_img clearfix"><img src="" alt="" /><img src="" alt="" /><img src="" alt="" /></div>
+					</li>
+					<li class="clearfix">
+						<div class="name clearfix"><span class="name_name">爱哭的雨</span><span class="time">2015-05-16</span></div>
+						<div class="content">味道好！很好！味道好！很好！味道好！很好！味道好！很好！味道 好！很好！
+						</div>
+						<div class="p_img clearfix"></div>
+					</li>
+				</ul>
+				<div class="more_content">
+					<a href="#">查看全部评论</a>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function() {
+				$(".shoucang_turn").click(function() {
+					$(this).attr("src", "img/shoucang_active.png")
+				})
+			})
+		</script>
+	</body>
+
+</html>
